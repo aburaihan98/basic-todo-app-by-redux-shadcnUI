@@ -1,5 +1,7 @@
+import type { RootState } from "@/redux/store";
 import type { ITask } from "@/types/interface.task";
 import { createSlice } from "@reduxjs/toolkit";
+import { Droplet } from "lucide-react";
 
 interface InitialState {
   tasks: ITask[];
@@ -95,5 +97,9 @@ const taskSlice = createSlice({
   initialState,
   reducers: {},
 });
+
+export const selectTask = (state: RootState) => {
+  return state.todo.tasks;
+};
 
 export default taskSlice.reducer;
