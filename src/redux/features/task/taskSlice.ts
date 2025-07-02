@@ -12,15 +12,17 @@ const initialState: InitialState = {
     {
       id: 1,
       title: "Implement user authentication",
-      isCompleted: false, // note: JSX এ task.isCompleted ব্যবহার হচ্ছে, তাই এখানে নামটা এমন
+      isCompleted: false,
+      dueDate: "12-10-10",
       address: "Dhaka Office",
-      priority: "High", // capitalized (High, Medium, Low)
+      priority: "High",
       description: "Implement login, registration and session management.",
     },
     {
       id: 2,
       title: "Design homepage layout",
       isCompleted: false,
+      dueDate: "12-10-10",
       address: "Remote",
       priority: "Medium",
       description: "Create responsive homepage layout using Tailwind CSS.",
