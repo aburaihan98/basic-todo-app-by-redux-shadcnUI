@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import type { ITask } from "@/types/interface.task";
-import React from "react";
 
 interface IProps {
   task: ITask;
